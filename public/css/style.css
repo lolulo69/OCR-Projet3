@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  justify-content: center;
+  box-shadow: 0px 0px 5px 1.2px darkgrey;
+  position: relative;
+  z-index: 2;
+}
+.header__img {
+  width: 165px;
+}
+
+.loc {
+  display: flex;
+  background-color: #EAEAEA;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  color: #353535;
+}
+.loc__city {
+  padding-left: 22px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.intro {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background-color: #F6F6F6;
+  padding: 20px;
+  text-align: center;
+}
+.intro__title {
+  font-weight: 700;
+  font-size: 25px;
+  padding: 0 10%;
+}
+.intro__subtitle {
+  font-weight: 300;
+  font-size: 18px;
+  color: #353535;
+}
+.intro__button {
+  padding: 15px 0;
+  background: linear-gradient(175deg, #FF79DA -20%, #9356DC 100%);
+  border-radius: 30px;
+  margin: 30px 60px;
+  color: white;
+  font-weight: 500;
+  box-shadow: 0px 2px 10px 1.2px darkgrey;
+  transition: all 0.3s ease 0s;
+}
+.intro__button:hover, .intro__button:active {
+  background: transparent;
+  outline: 2px solid #FF79DA;
+  color: #9356DC;
+  box-sizing: border-box;
+}
+
+.function {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  flex-flow: column;
+  padding: 40px 10px;
+}
+.function__list {
+  text-align: center;
+  padding: 18px;
+  list-style: none;
+  counter-reset: li;
+}
+.function__list li {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  counter-increment: li;
+  background-color: #F6F6F6;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 3px 10px 1.2px #CECECE;
+  margin: 25px 0;
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+}
+.function__list li::before {
+  content: counter(li);
+  color: white;
+  background-color: #9356DC;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  margin-left: -32px;
+}
+.function__list li:hover, .function__list li:active {
+  background-color: #f5edff;
+}
+.function__list li:hover i, .function__list li:active i {
+  color: #9356DC;
+}
+.function__list i {
+  display: inherit;
+  align-items: center;
+  margin: auto 20px;
+  width: 25px;
+  height: 25px;
+  font-size: 18px;
+  color: #7E7E7E;
+}
+.function__list__text {
+  margin: auto 0;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=style.css.map */

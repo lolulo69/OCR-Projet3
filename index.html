@@ -3,18 +3,20 @@
     <head>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="./public/css/normalize.css">
         <link rel="stylesheet" href="./public/css/style.css">
         <script src="https://kit.fontawesome.com/76165e89d2.js" crossorigin="anonymous"></script>
         <title>Projet 3 - Lucas Lefort</title>
     </head>
     <body>
         <section id="header">
-            <header>
-                <a href="index.html"><img src="./public/images/logo/ohmyfood.png" alt="Ohmyfood"></a>
+            <header class="header">
+                <a href="index.html"><img class="header__img" src="./public/images/logo/ohmyfood.png" alt="Ohmyfood"></a>
             </header>
-            <i></i>
-            <h5>Paris, Belleville</h5>
+            <div class="loc">
+                <i class="loc__icon fa-solid fa-location-dot"></i>
+                <h5 class="loc__city">Paris, Belleville</h5>
+            </div>
         </section>
         <main>
             <section id="introduction">
@@ -26,9 +28,9 @@
                 <div class="function">
                     <h2 class="function__title">Fonctionnement</h2>
                     <ol class="function__list">
-                        <li><i></i>Choisissez un restaurant</li>
-                        <li><i></i>Composez votre menu</li>
-                        <li><i></i>Dégustez au restaurant</li>
+                        <li><i class="fa-solid fa-mobile-screen-button"></i><span class="function__list__text">Choisissez un restaurant</span></li>
+                        <li><i class="fa-solid fa-list-ul"></i><span class="function__list__text">Composez votre menu</span></li>
+                        <li><i class="fa-solid fa-store"></i><span class="function__list__text">Dégustez au restaurant</span></li>
                     </ol>
                 </div>
             </section>
@@ -37,7 +39,7 @@
                 <div class="container">
                     <div class="restaurant">
                         <div class="restaurant__new">Nouveau</div>
-                        <img class="restaurant__img" src="./public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo du restaurant La palette du goût">
+                        <img class="restaurant__img" src="./public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jp" alt="Photo du restaurant La palette du goût">
                         <div class="restaurant__text">
                             <h2 class="restaurant-title">La palette du goût</h2>
                             <h4 class="restaurant-subtitle">Ménilmontant</h4>
@@ -48,7 +50,7 @@
                     </div>
                     <div class="restaurant">
                         <div class="restaurant__new">Nouveau</div>
-                        <img class="restaurant__img" src="./public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo du restaurant La note enchantée">
+                        <img class="restaurant__img" src="./public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jp" alt="Photo du restaurant La note enchantée">
                         <div class="restaurant__text">
                             <h2 class="restaurant-title">La note enchantée</h2>
                             <h4 class="restaurant-subtitle">Charonne</h4>
@@ -58,7 +60,7 @@
                         </div>
                     </div>
                     <div class="restaurant">
-                        <img class="restaurant__img" src="./public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo du restaurant À la française">
+                        <img class="restaurant__img" src="./public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jp" alt="Photo du restaurant À la française">
                         <div class="restaurant__text">
                             <h2 class="restaurant-title">À la française</h2>
                             <h4 class="restaurant-subtitle">Cité Rouge</h4>
@@ -68,7 +70,7 @@
                         </div>
                     </div>
                     <div class="restaurant">
-                        <img class="restaurant__img" src="./public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo du restaurant Le délice des sens">
+                        <img class="restaurant__img" src="./public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jp" alt="Photo du restaurant Le délice des sens">
                         <div class="restaurant__text">
                             <h2 class="restaurant-title">Le délice des sens</h2>
                             <h4 class="restaurant-subtitle">Folie-Méricourt</h4>
