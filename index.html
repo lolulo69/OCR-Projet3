@@ -36,59 +36,107 @@
             </section>
             <section id="restaurants" class="restaurants">
                 <h1 class="restaurants__title">Restaurants</h1>
-                <div class="container">
+                <div class="restaurants__container">
                     <div class="restaurant">
-                        <div class="restaurant__new">Nouveau</div>
-                        <img class="restaurant__img" src="./public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jp" alt="Photo du restaurant La palette du goût">
-                        <div class="restaurant__text">
-                            <h2 class="restaurant-title">La palette du goût</h2>
-                            <h4 class="restaurant-subtitle">Ménilmontant</h4>
-                        </div>
-                        <div class="restaurant__icon">
-                            <i></i>
-                        </div>
+                        <a class="restaurant__link" href="#">
+                            <div class="restaurant__new">Nouveau</div>
+                            <img class="restaurant__img" src="./public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo du restaurant La palette du goût">
+                            <div class="restaurant__text">
+                                <h2 class="restaurant__text__title">La palette du goût</h2>
+                                <h4 class="restaurant__text__subtitle">Ménilmontant</h4>
+                            </div>
+                        </a>
+                        <svg id="heart1" class='restaurant__icon' xmlns="http://www.w3.org/2000/svg" version="1.1" width="60" height="48" viewBox="0 0 500 500">
+                            <defs>
+                                <linearGradient id="gradient1" x1="0%" y1="100%" x2="0%" y2="0%">
+                                    <stop class="color1" offset="0" stop-color="#9356DC">
+                                        <animate attributeName="offset" begin="heart1.click" dur="1s"  fill="freeze" from="0" to="1" />
+                                    </stop>
+                                    <stop class="color2" offset="0" stop-color="#FFF">
+                                        <animate attributeName="offset" begin="heart1.click" dur="1s"  fill="freeze" from="0" to="1" />
+                                    </stop>
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#gradient1)" d="M340.8,98.4c50.7,0,91.9,41.3,91.9,92.3c0,26.2-10.9,49.8-28.3,66.6L256,407.1L105,251.6c-15.8-16.6-25.6-39.1-25.6-63.9 c0-51,41.1-92.3,91.9-92.3c38.2,0,70.9,23.4,84.8,56.8C269.8,121.9,302.6,98.4,340.8,98.4"/>
+                        </svg>
                     </div>
                     <div class="restaurant">
-                        <div class="restaurant__new">Nouveau</div>
-                        <img class="restaurant__img" src="./public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jp" alt="Photo du restaurant La note enchantée">
-                        <div class="restaurant__text">
-                            <h2 class="restaurant-title">La note enchantée</h2>
-                            <h4 class="restaurant-subtitle">Charonne</h4>
-                        </div>
-                        <div class="restaurant__icon">
-                            <i></i>
-                        </div>
+                        <a class="restaurant__link" href="#">
+                            <div class="restaurant__new">Nouveau</div>
+                            <img class="restaurant__img" src="./public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo du restaurant La note enchantée">
+                            <div class="restaurant__text">
+                                <h2 class="restaurant__text__title">La note enchantée</h2>
+                                <h4 class="restaurant__text__subtitle">Charonne</h4>
+                            </div>
+                        </a>
+                        <svg id="heart2" class='restaurant__icon' xmlns="http://www.w3.org/2000/svg" version="1.1" width="60" height="48" viewBox="0 0 500 500">
+                            <defs>
+                                <linearGradient id="gradient2" x1="0%" y1="100%" x2="0%" y2="0%">
+                                    <stop class="color1" offset="0" stop-color="#9356DC">
+                                        <animate attributeName="offset" begin="heart2.click" dur="1s"  fill="freeze" from="0" to="1" />
+                                    </stop>
+                                    <stop class="color2" offset="0" stop-color="#FFF">
+                                        <animate attributeName="offset" begin="heart2.click" dur="1s"  fill="freeze" from="0" to="1" />
+                                    </stop>
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#gradient2)" d="M340.8,98.4c50.7,0,91.9,41.3,91.9,92.3c0,26.2-10.9,49.8-28.3,66.6L256,407.1L105,251.6c-15.8-16.6-25.6-39.1-25.6-63.9 c0-51,41.1-92.3,91.9-92.3c38.2,0,70.9,23.4,84.8,56.8C269.8,121.9,302.6,98.4,340.8,98.4"/>
+                        </svg>
                     </div>
                     <div class="restaurant">
-                        <img class="restaurant__img" src="./public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jp" alt="Photo du restaurant À la française">
-                        <div class="restaurant__text">
-                            <h2 class="restaurant-title">À la française</h2>
-                            <h4 class="restaurant-subtitle">Cité Rouge</h4>
-                        </div>
-                        <div class="restaurant__icon">
-                            <i></i>
-                        </div>
+                        <a class="restaurant__link" href="#">
+                            <img class="restaurant__img" src="./public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo du restaurant À la française">
+                            <div class="restaurant__text">
+                                <h2 class="restaurant__text__title">À la française</h2>
+                                <h4 class="restaurant__text__subtitle">Cité Rouge</h4>
+                            </div>
+                        </a>
+                        <svg id="heart3" class='restaurant__icon' xmlns="http://www.w3.org/2000/svg" version="1.1" width="60" height="48" viewBox="0 0 500 500">
+                            <defs>
+                                <linearGradient id="gradient3" x1="0%" y1="100%" x2="0%" y2="0%">
+                                    <stop class="color1" offset="0" stop-color="#9356DC">
+                                        <animate attributeName="offset" begin="heart3.click" dur="1s"  fill="freeze" from="0" to="1" />
+                                    </stop>
+                                    <stop class="color2" offset="0" stop-color="#FFF">
+                                        <animate attributeName="offset" begin="heart3.click" dur="1s"  fill="freeze" from="0" to="1" />
+                                    </stop>
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#gradient3)" d="M340.8,98.4c50.7,0,91.9,41.3,91.9,92.3c0,26.2-10.9,49.8-28.3,66.6L256,407.1L105,251.6c-15.8-16.6-25.6-39.1-25.6-63.9 c0-51,41.1-92.3,91.9-92.3c38.2,0,70.9,23.4,84.8,56.8C269.8,121.9,302.6,98.4,340.8,98.4"/>
+                        </svg>
                     </div>
                     <div class="restaurant">
-                        <img class="restaurant__img" src="./public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jp" alt="Photo du restaurant Le délice des sens">
-                        <div class="restaurant__text">
-                            <h2 class="restaurant-title">Le délice des sens</h2>
-                            <h4 class="restaurant-subtitle">Folie-Méricourt</h4>
-                        </div>
-                        <div class="restaurant__icon">
-                            <i></i>
-                        </div>
+                        <a class="restaurant__link" href="#">
+                            <img class="restaurant__img" src="./public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo du restaurant Le délice des sens">
+                            <div class="restaurant__text">
+                                <h2 class="restaurant__text__title">Le délice des sens</h2>
+                                <h4 class="restaurant__text__subtitle">Folie-Méricourt</h4>
+                            </div>
+                        </a>
+                        <svg id="heart4" class='restaurant__icon' xmlns="http://www.w3.org/2000/svg" version="1.1" width="60" height="48" viewBox="0 0 500 500">
+                            <defs>
+                                <linearGradient id="gradient4" x1="0%" y1="100%" x2="0%" y2="0%">
+                                    <stop class="color1" offset="0" stop-color="#9356DC">
+                                        <animate attributeName="offset" begin="heart4.click" dur="1s"  fill="freeze" from="0" to="1" />
+                                    </stop>
+                                    <stop class="color2" offset="0" stop-color="#FFF">
+                                        <animate attributeName="offset" begin="heart4.click" dur="1s"  fill="freeze" from="0" to="1" />
+                                    </stop>
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#gradient4)" d="M340.8,98.4c50.7,0,91.9,41.3,91.9,92.3c0,26.2-10.9,49.8-28.3,66.6L256,407.1L105,251.6c-15.8-16.6-25.6-39.1-25.6-63.9 c0-51,41.1-92.3,91.9-92.3c38.2,0,70.9,23.4,84.8,56.8C269.8,121.9,302.6,98.4,340.8,98.4"/>
+                        </svg>
                     </div>
                 </div>
             </section>
         </main>
-        <footer>
+        <footer class="footer">
             <h2 class="footer__title">ohmyfood</h2>
             <ul class="footer__list">
-                <li><i></i><a href="#"></a></li>
-                <li><i></i><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
+                <li><i class="fa-solid fa-utensils"></i><a href="#">Proposer un restaurant</a></li>
+                <li><i class="fa-solid fa-handshake-angle"></i><a href="#">Devenir partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </footer>
     </body>

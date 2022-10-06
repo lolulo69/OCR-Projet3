@@ -37,13 +37,15 @@
     justify-content: center;
     text-align: left;
     flex-flow: column;
-    padding: 40px 10px;
+    padding: 40px 0;
+    padding-left: 18px;
     &__title {
-        
+        font-size: 21.5px;
     }
     &__list {
         text-align: center;
         padding: 18px;
+        padding-top: 5px;
         list-style: none; 
         counter-reset: li;
         li {
@@ -90,5 +92,73 @@
             margin: auto 0;
             font-weight: 500;
         }
+    }
+}
+.restaurants {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: $grey;
+    padding: 40px 18px;
+    padding-bottom: 70px;
+    &__title {
+        font-size: 21.5px;
+        padding-bottom: 5px;
+    }
+    &__container {
+        display: inherit;
+        flex-flow: inherit;
+        gap: 30px;
+    }
+}
+.restaurant {
+    display: inherit;
+    flex-flow: inherit;
+    border-radius: 20px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 3px 10px 0.5px #CECECE;
+    &__link {
+        cursor: pointer;
+        color: black;
+    }
+    &__top {
+        height: 70%;
+    }
+    &__new {
+        position: absolute;
+        background-color: $light-green;
+        color: $text-green;
+        font-size: 15px;
+        padding: 5px 10px;
+        right: 0%;
+        z-index: 100;
+        margin: 20px 35px;
+    }
+    &__img {
+        width: 100%;
+        max-height: 190px;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+    }
+    &__text {
+        margin: 15px;
+        &__title {
+            font-size: 18px;
+            font-weight: 600;
+            padding-bottom: 5px;
+        }
+        &__subtitle {
+            font-size: 17px;
+            font-weight: 300;
+        }
+    }
+    &__icon {
+        position: absolute;
+        z-index: 100;
+        width: 38px;
+        stroke: black;
+        stroke-width: 10;
+        right: 10%;
+        margin-top: 205px;
     }
 }

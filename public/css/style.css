@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Shrikhand&display=swap");
 * {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -30,10 +30,42 @@ a {
   padding: 15px;
   color: #353535;
 }
+.loc__icon {
+  position: absolute;
+  left: 28%;
+}
 .loc__city {
-  padding-left: 22px;
   font-size: 16px;
   font-weight: 500;
+}
+
+.footer {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #353535;
+  color: #F6F6F6;
+  padding: 18px;
+}
+.footer__title {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 18px;
+}
+.footer__list {
+  padding: 20px 0;
+  list-style-type: none;
+}
+.footer__list li {
+  padding: 5px 0;
+}
+.footer__list i {
+  padding-right: 10px;
+}
+.footer__list i + a {
+  font-weight: 500;
+}
+.footer__list a {
+  color: #F6F6F6;
 }
 
 .intro {
@@ -76,11 +108,16 @@ a {
   justify-content: center;
   text-align: left;
   flex-flow: column;
-  padding: 40px 10px;
+  padding: 40px 0;
+  padding-left: 18px;
+}
+.function__title {
+  font-size: 21.5px;
 }
 .function__list {
   text-align: center;
   padding: 18px;
+  padding-top: 5px;
   list-style: none;
   counter-reset: li;
 }
@@ -127,6 +164,76 @@ a {
 .function__list__text {
   margin: auto 0;
   font-weight: 500;
+}
+
+.restaurants {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #F6F6F6;
+  padding: 40px 18px;
+  padding-bottom: 70px;
+}
+.restaurants__title {
+  font-size: 21.5px;
+  padding-bottom: 5px;
+}
+.restaurants__container {
+  display: inherit;
+  flex-flow: inherit;
+  gap: 30px;
+}
+
+.restaurant {
+  display: inherit;
+  flex-flow: inherit;
+  border-radius: 20px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 3px 10px 0.5px #CECECE;
+}
+.restaurant__link {
+  cursor: pointer;
+  color: black;
+}
+.restaurant__top {
+  height: 70%;
+}
+.restaurant__new {
+  position: absolute;
+  background-color: #99e2d0;
+  color: #008766;
+  font-size: 15px;
+  padding: 5px 10px;
+  right: 0%;
+  z-index: 100;
+  margin: 20px 35px;
+}
+.restaurant__img {
+  width: 100%;
+  max-height: 190px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+.restaurant__text {
+  margin: 15px;
+}
+.restaurant__text__title {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+.restaurant__text__subtitle {
+  font-size: 17px;
+  font-weight: 300;
+}
+.restaurant__icon {
+  position: absolute;
+  z-index: 100;
+  width: 38px;
+  stroke: black;
+  stroke-width: 10;
+  right: 10%;
+  margin-top: 205px;
 }
 
 /*# sourceMappingURL=style.css.map */
