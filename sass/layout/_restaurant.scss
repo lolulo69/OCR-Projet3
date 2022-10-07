@@ -1,0 +1,101 @@
+.background {
+    &--lapalettedugout {
+        background: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") no-repeat top/100%;
+    }
+    &--lanoteenchantee {
+        background: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg") no-repeat top/100%;
+    }
+    &--alafrancaise {
+        background: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg") no-repeat top/100%;
+    }
+    &--ledelicedessens {
+        background: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg") no-repeat top/100%;
+    }
+}
+.menu {
+    padding-top: 210px;
+    &__container {
+        display: flex;
+        flex-flow: column nowrap;
+        border-radius: 40px;
+        padding: 35px 15px;
+        padding-bottom: 60px;
+        background: $grey;
+    }
+    &__carte {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 20px;
+        padding: 17px 0;
+        margin-bottom: 10px;
+        &__container {
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 20px;
+        }
+        &__element {
+            background-color: white;
+            border-radius: 15px;
+            padding: 12px 10px;
+            box-shadow: 0 3px 10px 0.5px #CECECE;
+            &__bottom {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                padding-top: 8px;
+                p {
+                    font-size: 15.5px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    margin-right: 8px;
+                    white-space: nowrap;
+                }
+                h4 {
+                    font-size: 16px;
+                    font-weight: 500;
+                    margin-right: 10px;
+                }
+            }
+            h2 {
+                font-size: 18.5px;
+                font-weight: 500;
+            }
+        }
+    }
+    &__title {
+        display: inherit;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-content: center;
+        margin-bottom: 15px;
+        h1 {
+            margin: auto 0;
+            @include title();
+            font-size: 28px;
+        }
+    }
+    &__icon {
+        margin-right: 20px;
+        stroke: black;
+        stroke-width: 10;
+    }
+    &__subtitle {
+        h3 {
+            font-weight: 300;
+            font-size: 16.5px;
+            text-transform: uppercase;
+        }
+        hr {
+            width: 36px;
+            margin-top: 6px;
+            border: 3px solid #99E2D0;
+            border-bottom: 1px;
+        }
+        
+    }
+    &__button {
+        @include button();
+        border: none;
+        margin: 25px 75px;
+    }
+}

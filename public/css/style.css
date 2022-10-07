@@ -9,17 +9,29 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-weight: 300;
+}
+
 .header {
   display: flex;
   padding-bottom: 10px;
   padding-top: 20px;
   justify-content: center;
+}
+.header--home {
   box-shadow: 0px 0px 5px 1.2px darkgrey;
   position: relative;
   z-index: 2;
 }
 .header__img {
   width: 165px;
+}
+.header__icon {
+  color: #353535;
+  font-size: 20px;
+  position: absolute;
+  left: 5%;
 }
 
 .loc {
@@ -68,6 +80,117 @@ a {
   color: #F6F6F6;
 }
 
+.background--lapalettedugout {
+  background: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") no-repeat top/100%;
+}
+.background--lanoteenchantee {
+  background: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg") no-repeat top/100%;
+}
+.background--alafrancaise {
+  background: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg") no-repeat top/100%;
+}
+.background--ledelicedessens {
+  background: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg") no-repeat top/100%;
+}
+
+.menu {
+  padding-top: 210px;
+}
+.menu__container {
+  display: flex;
+  flex-flow: column nowrap;
+  border-radius: 40px;
+  padding: 35px 15px;
+  padding-bottom: 60px;
+  background: #F6F6F6;
+}
+.menu__carte {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+  padding: 17px 0;
+  margin-bottom: 10px;
+}
+.menu__carte__container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+}
+.menu__carte__element {
+  background-color: white;
+  border-radius: 15px;
+  padding: 12px 10px;
+  box-shadow: 0 3px 10px 0.5px #CECECE;
+}
+.menu__carte__element__bottom {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding-top: 8px;
+}
+.menu__carte__element__bottom p {
+  font-size: 15.5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+.menu__carte__element__bottom h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+.menu__carte__element h2 {
+  font-size: 18.5px;
+  font-weight: 500;
+}
+.menu__title {
+  display: inherit;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 15px;
+}
+.menu__title h1 {
+  margin: auto 0;
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 28px;
+}
+.menu__icon {
+  margin-right: 20px;
+  stroke: black;
+  stroke-width: 10;
+}
+.menu__subtitle h3 {
+  font-weight: 300;
+  font-size: 16.5px;
+  text-transform: uppercase;
+}
+.menu__subtitle hr {
+  width: 36px;
+  margin-top: 6px;
+  border: 3px solid #99E2D0;
+  border-bottom: 1px;
+}
+.menu__button {
+  padding: 15px 0;
+  background: linear-gradient(175deg, #FF79DA -20%, #9356DC 100%);
+  border-radius: 30px;
+  color: white;
+  font-weight: 500;
+  box-shadow: 0px 2px 10px 1.2px darkgrey;
+  transition: all 0.3s ease 0s;
+  border: none;
+  margin: 25px 75px;
+}
+.menu__button:hover, .menu__button:active {
+  background: transparent;
+  outline: 2px solid #FF79DA;
+  color: #9356DC;
+  box-sizing: border-box;
+}
+
 .intro {
   display: flex;
   flex-flow: column;
@@ -90,11 +213,11 @@ a {
   padding: 15px 0;
   background: linear-gradient(175deg, #FF79DA -20%, #9356DC 100%);
   border-radius: 30px;
-  margin: 30px 60px;
   color: white;
   font-weight: 500;
   box-shadow: 0px 2px 10px 1.2px darkgrey;
   transition: all 0.3s ease 0s;
+  margin: 30px 60px;
 }
 .intro__button:hover, .intro__button:active {
   background: transparent;
