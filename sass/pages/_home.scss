@@ -48,6 +48,12 @@
             margin: 25px 0;
             cursor: pointer;
             transition: all 0.2s ease 0s;
+            position: relative;
+            z-index: 1;
+            i {
+                position: relative;
+                z-index: 1;
+            }
             &::before {
                 content: counter(li);
                 color: white;
@@ -61,10 +67,27 @@
                 margin-left: -32px;
             }
             &:hover, &:active {
-                background-color: $grey-hovered;
+                border-radius: 20px;
+                    &::after {
+                        opacity: 1;
+                        border-radius: 20px;
+                    }
                 & i {
                     color: $primary-color;
                 }
+            }
+            &::after {
+                background-color: $grey-hovered;
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                opacity: 0;
+                z-index: -1;
+                transition: opacity 250ms;
+                border-radius: 20px;
             }
         }
         i {
@@ -148,5 +171,6 @@
         stroke-width: 10;
         right: 10%;
         margin-top: 205px;
+        cursor: pointer;
     }
 }
