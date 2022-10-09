@@ -96,3 +96,14 @@
         background: rgba($color: #FFF, $alpha: 0);
     }
 }
+
+@keyframes menu__element {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -38,6 +38,12 @@
             border-radius: 15px;
             padding: 12px 10px;
             box-shadow: 0 3px 10px 0.5px #CECECE;
+            animation: menu__element 400ms 500ms ease-in-out backwards;
+            @for $i from 1 through $entry-number {
+                &--#{$i} {
+                    animation-delay: 180ms * $i;
+                 }
+            }
             &__bottom {
                 display: flex;
                 flex-flow: row nowrap;
