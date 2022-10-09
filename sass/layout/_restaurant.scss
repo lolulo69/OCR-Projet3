@@ -34,15 +34,31 @@
             gap: 20px;
         }
         &__element {
+            display: flex;
+            flex-flow: row nowrap;
             background-color: white;
             border-radius: 15px;
-            padding: 12px 10px;
             box-shadow: 0 3px 10px 0.5px #CECECE;
             animation: menu__element 400ms 300ms ease-in-out backwards;
             @for $i from 1 through $max-entry-number {
                 &--#{$i} {
                     animation-delay: 180ms * $i;
                  }
+            }
+            &:active, &:hover {
+                .checked {
+                    width: 90px;
+                }
+                .fa-circle-check {
+                    animation: menu__checked 350ms ease-in-out both;
+                }
+            }
+            &__column {
+                display: flex;
+                flex-flow: column nowrap;
+                flex-basis: 100%;
+                padding: 12px 10px;
+                overflow: hidden;
             }
             &__bottom {
                 display: flex;
@@ -104,5 +120,21 @@
         @include button();
         border: none;
         margin: 25px 75px;
+    }
+}
+
+.checked {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    background: $tertiary-color;
+    width: 0;
+    overflow: hidden;
+    border-radius: 0 15px 15px 0;
+    transition: all ease-in-out 350ms;
+    i {
+        margin: auto;
     }
 }
