@@ -14,6 +14,11 @@
 }
 .menu {
     padding-top: 210px;
+    @include desktop-only {
+        display: flex;
+        justify-content: center;
+        background-size: cover;
+    }
     &__container {
         display: flex;
         flex-flow: column nowrap;
@@ -21,6 +26,7 @@
         padding: 35px 15px;
         padding-bottom: 60px;
         background: $grey;
+        width: 958px;
     }
     &__carte {
         display: flex;
@@ -118,6 +124,10 @@
     }
     &__button {
         @include button();
+        @include desktop-tablet {
+            margin: 30px auto;
+            width: 300px;
+        }
         border: none;
         margin: 25px 75px;
     }

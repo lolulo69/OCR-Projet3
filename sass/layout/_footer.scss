@@ -4,6 +4,12 @@
     background-color: $verydark-grey;
     color: $grey;
     padding: 18px;
+    @include desktop-only {
+        padding: 20px 50px;
+    }
+    @include tablet-only {
+        padding: 18px 30px;
+    }
     &__title {
         @include title();
         font-size: 18px;

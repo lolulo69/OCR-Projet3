@@ -14,3 +14,9 @@ $text-green: #008766;
 
 
 $max-entry-number: 10;
+
+$breakpoints: (
+    desktop: 992px,
+    tablet-min: 768px,
+    tablet-max: 991px
+);

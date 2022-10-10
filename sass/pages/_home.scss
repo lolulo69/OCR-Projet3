@@ -1,3 +1,8 @@
+.introduction {
+    @include desktop-only {
+        display: flex;
+    }
+}
 .intro {
     display: flex;
     flex-flow: column;
@@ -5,6 +10,10 @@
     background-color: $grey;
     padding: 20px;
     text-align: center;
+    @include desktop-only {
+        background-color: white;
+        flex-basis: 50%;
+    }
     &__title {
         font-weight: 700;
         font-size: 25px;
@@ -18,6 +27,10 @@
     &__button {
         @include button();
         margin: 30px 60px;
+        @include desktop-tablet {
+            margin: 30px auto;
+            width: 300px;
+        }
     }
 }
 .function {
@@ -27,8 +40,17 @@
     flex-flow: column;
     padding: 40px 0;
     padding-left: 18px;
+    @include desktop-only {
+        flex-basis: 50%;
+    }
+    @include desktop-tablet {
+        padding: 40px 30px;
+    }
     &__title {
         font-size: 21.5px;
+        @include desktop-only {
+            margin: auto;
+        }
     }
     &__list {
         text-align: center;
@@ -111,6 +133,14 @@
     background-color: $grey;
     padding: 40px 18px;
     padding-bottom: 70px;
+    @include desktop-only {
+        padding: 100px 50px;
+        padding-top: 40px;
+    }
+    @include tablet-only {
+        padding: 40px 30px;
+        padding-bottom: 100px;
+    }
     &__title {
         font-size: 21.5px;
         padding-bottom: 5px;
@@ -119,18 +149,37 @@
         display: inherit;
         flex-flow: inherit;
         gap: 30px;
+        @include desktop-only {
+            flex-flow: row wrap;
+            justify-content: space-around;
+            gap: 2.5%;
+        }
+        @include tablet-only {
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
     }
 }
 .restaurant {
     display: inherit;
-    flex-flow: inherit;
+    flex-flow: row;
+    justify-content: right;
     border-radius: 20px;
     width: 100%;
     background-color: white;
     box-shadow: 0 3px 10px 0.5px #CECECE;
+    @include desktop-only {
+        width: 23%;
+    }
+    @include tablet-only {
+        width: 47%;
+    }
     &__link {
         cursor: pointer;
         color: black;
+        display: flex;
+        flex-flow: column;
+        align-items: end;
     }
     &__top {
         height: 70%;
@@ -141,26 +190,34 @@
         color: $text-green;
         font-size: 15px;
         padding: 5px 10px;
-        right: 0%;
         z-index: 100;
-        margin: 20px 35px;
+        margin: 20px 20px;
     }
     &__img {
         width: 100%;
         max-height: 190px;
         object-fit: cover;
         border-radius: 20px 20px 0 0;
+        max-width: 100%;
+        width: 1000px;
+        @include desktop-tablet {
+            min-height: 190px;
+        }
     }
     &__text {
-        margin: 15px;
+        width: 100%;
         &__title {
             font-size: 18px;
             font-weight: 600;
             padding-bottom: 5px;
+            padding-top: 15px;
+            padding-left: 15px;
         }
         &__subtitle {
             font-size: 17px;
             font-weight: 300;
+            padding-bottom: 15px;
+            padding-left: 15px;
         }
     }
     &__icon {
@@ -169,7 +226,7 @@
         width: 38px;
         stroke: black;
         stroke-width: 10;
-        right: 10%;
+        margin-right: 15px;
         margin-top: 205px;
         cursor: pointer;
     }
