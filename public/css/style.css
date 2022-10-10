@@ -125,7 +125,11 @@ p {
   padding: 35px 15px;
   padding-bottom: 60px;
   background: #F6F6F6;
-  width: 958px;
+}
+@media screen and (min-width: 992px) {
+  .menu__container {
+    width: 958px;
+  }
 }
 .menu__carte {
   display: flex;
@@ -146,6 +150,7 @@ p {
   border-radius: 15px;
   box-shadow: 0 3px 10px 0.5px #CECECE;
   animation: menu__element 400ms 300ms ease-in-out backwards;
+  cursor: pointer;
 }
 .menu__carte__element--1 {
   animation-delay: 180ms;
