@@ -28,6 +28,9 @@
         }
         a {
             color: $grey;
+            &:hover  {
+                border-bottom: 1.5px solid $dark-grey;
+            }
         }
     }
 }
