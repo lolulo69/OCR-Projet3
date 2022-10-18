@@ -37,6 +37,39 @@
     }
 }
 
+@mixin heart {
+    position: relative;
+    display: block;
+    font-size: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    &:hover, &:active {
+        &::after {
+        transform: scale(1);
+        opacity: 1;
+        transition: all 0.4s;
+        }
+    }
+    
+    &::after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f004";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        font-weight: bold;
+        background: linear-gradient(175deg, $secondary-color -20%, $primary-color 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform: scale(0);
+        transform-origin: center 90%;
+    }
+}
+
 @mixin desktop-only {
     @media screen and (min-width: map-get($breakpoints, desktop)) {
         @content;

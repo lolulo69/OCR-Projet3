@@ -222,12 +222,13 @@
     }
     &__icon {
         position: absolute;
-        z-index: 100;
         width: 38px;
-        stroke: black;
-        stroke-width: 10;
-        margin-right: 15px;
-        margin-top: 205px;
-        cursor: pointer;
+        height: 38px;
+        z-index: 100;
+        margin-right: 18px;
+        margin-top: 210px;
+        i {
+            @include heart;
+        }
     }
 }

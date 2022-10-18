@@ -11,11 +11,6 @@
     &__img {
         width: 165px;
     }
-    &__a-icon {
-        @include desktop-only {
-            display: none;
-        }
-    }
     &__icon {
         color: $verydark-grey;
         font-size: 20px;
