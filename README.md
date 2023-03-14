@@ -5,6 +5,8 @@
 Ce projet a pour but l'intégration d'une maquette et de ses animations en HTML et CSS.
 Pour ce projet, j'ai utilisé Sass et un prefixer.
 
+[Lien du projet](https://ohmyfood-lolulo69.vercel.app/)
+
 ## Scripts utilisables
 
 Vous pouvez utiliser les scripts suivants avec ce projet :
